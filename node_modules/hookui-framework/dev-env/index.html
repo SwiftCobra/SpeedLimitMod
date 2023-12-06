@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            font-size: 1px;
+        }
+        @font-face {
+            font-family: 'Overpass';
+            src: url(fonts/overpass.ttf) format('truetype');
+            font-weight: 375;
+            font-variation-settings: "wght" 375;
+        }
+        html, body {
+            background-color: #282C35;
+            color: white;
+        }
+
+        #sidebar, #preview {
+            padding: 10px;
+        }
+
+        #sidebar {
+            background-color: #31333a;
+            height: 100vh;
+            border-right: 2px solid #5d6170;
+        }
+    </style>        
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="./dist/dev-bundle.js"></script>
+</body>
+</html>
