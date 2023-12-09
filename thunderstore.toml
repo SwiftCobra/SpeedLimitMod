@@ -1,0 +1,24 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "SwiftCobra"
+name = "Speed Limit"
+versionNumber = "0.1.0"
+description = "Change Speed Limits"
+websiteUrl = "https://github.com/SwiftCobra/SpeedLimitMod"
+containsNsfwContent = false
+
+[package.dependencies]
+BepInEx-BepInExPack = "5.4.2100"
+CaptainOfCoit-HookUI = "0.3.2"
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./ts-build"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = [ "cities-skylines-ii", ]
+categories = [ "mods" ]

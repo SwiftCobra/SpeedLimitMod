@@ -1,3 +1,8 @@
 # 0.1.0
 
 Initial Release
+
+Change Speed limits on roads and highways
+Displays speeds in kph and mph
+
+You must open the tool from the hookui button (backpack) before selecting a road/highway.

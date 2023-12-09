@@ -100,6 +100,6 @@ const $SpeedLimitEditor = ({ react }) => {
 window._$hookui.registerPanel({
     id: "scobra.speed-limit-editor",
     name: "Speed Limit",
-    icon: "Media/Game/Icons/Zones.svg",
+    icon: "Media/Game/Policies/HighSpeedHighways.svg",
     component: $SpeedLimitEditor
 })

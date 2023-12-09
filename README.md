@@ -1,7 +1,10 @@
 ﻿# Cities: Skylines 2 - Speed Limit Mod
 
 ## Initial Commit:
-   Set Speed Limit for roads and highways.
+- Change Speed limits on roads and highways
+- Displays speeds in kph and mph
+
+- You must open the tool from the hookui button (backpack) before selecting a road/highway.
 
 ### Built using Cities: Skylines 2 - C# Mod template by Captain-Of-Coit [Mod Template](https://github.com/Captain-Of-Coit/cities-skylines-2-mod-template)
 
