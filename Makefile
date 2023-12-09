@@ -12,7 +12,7 @@ build-ui:
 	@npx esbuild ui_src/speed_limit_editor.jsx --bundle --outfile=dist/bundle.js
 
 dev-ui:
-	@npx esbuild ui_src/speed_limit_editor.jsx --watch --bundle --outfile="D:\SteamLibrary\steamapps\common\Cities Skylines II\Cities2_Data\StreamingAssets\~UI~\HookUI\Extensions\panel.example.speed_limit_editor.js"
+	@npx esbuild ui_src/speed_limit_editor.jsx --watch --bundle --outfile="C:\Program Files (x86)\Steam\steamapps\common\Cities Skylines II\Cities2_Data\StreamingAssets\~UI~\HookUI\Extensions\panel.example.speed_limit_editor.js"
 
 build: clean restore build-ui
 	@dotnet build /p:BepInExVersion=$(BEPINEX_VERSION)

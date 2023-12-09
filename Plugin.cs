@@ -23,7 +23,7 @@ namespace SpeedLimitEditor
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} made patches! Patched methods: " + patchedMethods.Length);
 
             foreach (var patchedMethod in patchedMethods) {
-                Logger.LogInfo($"Patched method: {patchedMethod.Module.Name}:{patchedMethod.Name}");
+                Logger.LogInfo($"Patched method: {patchedMethod.DeclaringType?.FullName}:{patchedMethod.Name}");
             }
         }
 
@@ -36,7 +36,7 @@ namespace SpeedLimitEditor
 
     public class SpeedLimitEditorUI : UIExtension
     {
-        public new readonly string extensionID = "example.speed_limit_editor";
+        public new readonly string extensionID = "scobra.speed_limit_editor";
         public new readonly string extensionContent;
         public new readonly ExtensionType extensionType = ExtensionType.Panel;
 

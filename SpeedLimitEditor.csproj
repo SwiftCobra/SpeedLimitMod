@@ -31,7 +31,7 @@
 		and also allow the build to move the mod DLLs into the plugins directory for you
 	-->
 	<PropertyGroup>
-		<Cities2_Location>D:\SteamLibrary\steamapps\common\Cities Skylines II</Cities2_Location>
+		<Cities2_Location>C:\Program Files (x86)\Steam\steamapps\common\Cities Skylines II</Cities2_Location>
 	</PropertyGroup>
 
 	<!--
@@ -54,15 +54,13 @@
 		Make sure you have a private `libcs2` repository with the appropriate DLLs for this to work.
 		DO NOT make the proprietary DLLs for the game public, as the files are owned by PDX/CO. 
 	-->
-	<!--<ItemGroup>
+	<ItemGroup>
 		<Reference Include="libcs2/Colossal.*.dll" Private="False"/>
 		<Reference Include="libcs2/Game.dll" Private="False"/>
 		<Reference Include="libcs2/Unity.*.dll" Private="False"/>
-	</ItemGroup>-->
+		<Reference Include="libcs2/Newtonsoft.*.dll" Private="False" />
+	</ItemGroup>
 
-	<!--
-		Everything related to BepInEx and Harmony
-	-->
 	<ItemGroup>
 		<PackageReference Include="BepInEx.PluginInfoProps" Version="2.0.0" />
 		<PackageReference Include="HarmonyX" Version="2.10.2"></PackageReference>
@@ -80,17 +78,17 @@
 		Mainly for the purposes of being able to distribute your mods on Thunderstore, and
 		making it easy to upgrade in the future to proper versions.
 	-->
-	<!--<ItemGroup Condition="'$(BepInExVersion)' == '6'">
+	<ItemGroup Condition="'$(BepInExVersion)' == '6'">
 		<PackageReference Include="BepInEx.Unity.Mono" Version="6.0.0-be.*" />
-	</ItemGroup>-->
-
-	<ItemGroup Condition="'$(BepInExVersion)' == '5'">
-		<PackageReference Include="BepInEx.Core" Version="5.4.21" IncludeAssets="compile" />
 	</ItemGroup>
 
-	<!--<PropertyGroup Condition="'$(BepInExVersion)' == '6'">
+	<ItemGroup Condition="'$(BepInExVersion)' == '5'">
+		<PackageReference Include="BepInEx.Core" Version="5.4.21" IncludeAssets="compile"/>
+	</ItemGroup>
+
+	<PropertyGroup Condition="'$(BepInExVersion)' == '6'">
 		<DefineConstants>$(DefineConstants);BEPINEX_V6</DefineConstants>
-	</PropertyGroup>-->
+	</PropertyGroup>
 
 	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
