@@ -6,3 +6,9 @@ Change Speed limits on roads and highways
 Displays speeds in kph and mph
 
 You must open the tool from the hookui button (backpack) before selecting a road/highway.
+
+# 0.1.1
+
+- Fixed bug for when road was set to 0 speed, you could not change it again.
+ - Changed lowest speed possible to 1
+ - Change unselected speed to -1

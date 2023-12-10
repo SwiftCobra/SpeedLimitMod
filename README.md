@@ -13,7 +13,7 @@
 
 # Usage
 - Open Speed Limit tool through the HookUI button (Backpack)
-- Select a road bu click on the road name
+- Select a road, by click on the road name
 - Change speed slider, the roads speed will start updating.
 
 ### Built using Cities: Skylines 2 - C# Mod template by Captain-Of-Coit [Mod Template](https://github.com/Captain-Of-Coit/cities-skylines-2-mod-template)
