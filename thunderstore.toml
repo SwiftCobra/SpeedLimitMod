@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "SwiftCobra"
 name = "SpeedLimit"
-versionNumber = "0.1.1"
+versionNumber = "0.1.1-alpha.1"
 description = "Change Speed Limits"
 websiteUrl = "https://github.com/SwiftCobra/SpeedLimitMod"
 containsNsfwContent = false
