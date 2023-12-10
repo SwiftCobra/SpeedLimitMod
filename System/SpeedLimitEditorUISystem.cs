@@ -24,7 +24,7 @@ public class SpeedLimitEditorUISystem : UISystemBase
 
     private Entity selectedEntity;
     private bool changingSpeed;
-    private float averageSpeed;
+    private float averageSpeed = -1f;
     private NameSystem nameSystem;
     private string roadName = "";
     private GetterValueBinding<string> unitSystemBinding;
@@ -66,7 +66,7 @@ public class SpeedLimitEditorUISystem : UISystemBase
         if (toolSystem.selected == Entity.Null && toolSystem.selected != selectedEntity)
         {
             selectedEntity = Entity.Null;
-            averageSpeed = 0f;
+            averageSpeed = -1f;
             roadName = "";
             return;
         }
@@ -74,7 +74,7 @@ public class SpeedLimitEditorUISystem : UISystemBase
         if (toolSystem.selected.Index != selectedEntity.Index)
         {
             roadName = nameSystem.GetRenderedLabelName(toolSystem.selected);
-            averageSpeed = 0f;
+            averageSpeed = -1f;
 
             if (aggregateElementLookup.TryGetBuffer(toolSystem.selected, out var aggregateElements))
             {

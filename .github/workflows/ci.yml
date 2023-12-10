@@ -57,7 +57,7 @@ jobs:
         run: ./tcli-0.2.1-linux-x64/tcli publish --token=${{ secrets.TS_TOKEN }}
       - name: Create Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           tag: ${{ github.ref_name }}
         run: |
           gh release create "$tag" ./ts-build/*.zip \

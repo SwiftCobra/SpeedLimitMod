@@ -82,15 +82,15 @@ const $SpeedLimitEditor = ({ react }) => {
         height: "300"
     }
 
-    let minMax = { min: 0, max: 200 };
+    let minMax = { min: 1, max: 200 };
     if (units === 'mph')
-        minMax = { min: 0, max: 124}
+        minMax = { min: 1, max: 124}
 
     return <div>
         <$Panel title="Speed Limit Editor" react={react} style={style} onClose={onClose}>
-            {name === '' && speed === 0 ? <h2 style={{ marginLeft: '1em' }}>No Road Selected</h2> : null }
+            {name === '' && speed === -1 ? <h2 style={{ marginLeft: '1em' }}>No Road Selected</h2> : null }
             {name === '' ? null : <h2 style={{marginLeft: '1em'} }>{name}</h2> }
-            {speed == 0 ? null :
+            {speed == -1 ? null :
                 <$Slider react={react} value={speed} units={units} min={minMax.min} max={minMax.max} onValueChanged={(val) => handleSpeedChange(val)} />
             }
         </$Panel>
