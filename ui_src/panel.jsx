@@ -21,8 +21,7 @@ const Resizer = ({ onMouseDown }) => {
     const triangle = {
         width: 20,
         height: 20,
-        opacity: 0.2,
-        background: 'linear-gradient(to right bottom, transparent 0%, transparent 50%, var(--accentColorDark) 50%, var(--accentColorDark) 100%)'
+        opacity: 0.2
     }
     return <div style={style} onMouseDown={onMouseDown}>
         {/* <img style={{transform: 'rotate(-15deg)'}} src="Media/Misc/BalloonArrowLeftTop.svg"/> */}

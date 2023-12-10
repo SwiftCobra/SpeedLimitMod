@@ -1,4 +1,4 @@
-﻿# Cities: Skylines 2 - Speed Limit Mod
+# Cities: Skylines 2 - Speed Limit Mod
 
 ## Initial Commit:
 - Change Speed limits on roads and highways
