@@ -29,9 +29,9 @@ namespace SpeedLimitEditor
 
         // Keep in mind, Unity UI is immediate mode, so OnGUI is called multiple times per frame
         // https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnGUI.html
-        private void OnGUI() {
-            GUI.Label(new Rect(10, 10, 300, 20), $"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
-        }
+        //private void OnGUI() {
+        //    GUI.Label(new Rect(10, 10, 300, 20), $"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
+        //}
     }
 
     public class SpeedLimitEditorUI : UIExtension

@@ -1,5 +1,10 @@
 # Cities: Skylines 2 - Speed Limit Mod
 
+## V0.1.3
+- Updating to require Latest HookUI for CSII V1.0.18f1
+- Removing UI label.
+### Known Issue with All versions, After changing road speeds, adding buildings, or zone buildings will reset road back to default speed.
+
 ## V0.1.1
 - Fixed bug for when road was set to 0 speed, you could not change it again.
  - Changed lowest speed possible to 1
