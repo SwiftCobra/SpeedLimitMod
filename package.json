@@ -1,6 +1,6 @@
 {
   "name": "speed-limit-editor",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "Allows Changing road speed limits.",
   "main": "build.mjs",
   "scripts": {

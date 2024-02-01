@@ -12,3 +12,6 @@ You must open the tool from the hookui button (backpack) before selecting a road
 - Fixed bug for when road was set to 0 speed, you could not change it again.
  - Changed lowest speed possible to 1
  - Change unselected speed to -1
+
+# 0.1.4
+- Updating to latest HookUI for Thunderstore
